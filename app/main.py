@@ -33,7 +33,7 @@ async def analyze_text(payload: TextRequest):
             summary=f"Processed {len(payload.text.split())} words (Mock Mode)."
         )
 
-    # Real LLM Structured Output Call (Uncomment/use if you pass an OPENAI_API_KEY)
+    # Real LLM Structured Output Call 
     try:
         from openai import AsyncOpenAI
         client = AsyncOpenAI(api_key=api_key)
